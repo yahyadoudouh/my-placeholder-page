@@ -5,72 +5,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Welcome to My IT Journey</title>
+  <title>Welcome to My IT Journey | Yahya Doudouh</title>
   <style>
-    /* Reset some default styles */
+    /* Reset default styles */
     body, h1, p, a {
       margin: 0;
       padding: 0;
     }
 
-    /* Apply background color and text styling */
+    /* General body styling */
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f7f7f7;
+      background-color: #f4f7fc;
       color: #333;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      text-align: center;
       padding: 20px;
+      box-sizing: border-box;
     }
 
-    /* Main container style */
+    /* Main container styling */
     .container {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       padding: 40px;
-      max-width: 600px;
       width: 100%;
+      max-width: 700px;
+      text-align: center;
     }
 
-    /* Title style */
+    /* Header section with intro */
+    .intro {
+      margin-bottom: 30px;
+    }
+
     h1 {
       font-size: 2.5em;
+      color: #3d4d69;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      color: #6a7c99;
       margin-bottom: 20px;
-      color: #2d3e50;
     }
 
-    /* Paragraph style */
+    /* Description paragraph style */
     p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-      color: #555;
+      font-size: 1.1em;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 20px;
     }
 
-    /* Button style */
+    /* Highlighting key phrases */
+    .highlight {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    /* Call-to-action button style */
     .cta-button {
       display: inline-block;
       padding: 12px 20px;
       background-color: #007bff;
       color: white;
-      font-size: 1.1em;
+      font-size: 1.2em;
       text-decoration: none;
-      border-radius: 4px;
+      border-radius: 6px;
       transition: background-color 0.3s ease;
+      margin-bottom: 20px;
     }
 
     .cta-button:hover {
       background-color: #0056b3;
     }
 
-    /* Footer style */
+    /* Footer section */
     .footer {
       font-size: 0.9em;
       color: #888;
-      margin-top: 40px;
     }
 
     .footer a {
@@ -81,16 +99,62 @@
     .footer a:hover {
       text-decoration: underline;
     }
+
+    /* Section titles */
+    .section-title {
+      font-size: 1.6em;
+      color: #3d4d69;
+      margin-bottom: 15px;
+    }
+
+    /* Small animation for the title */
+    h1 {
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    /* Fade-in effect */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>Welcome to My IT Journey!</h1>
-    <p>Thank you for visiting my placeholder page. I’m currently building something awesome!</p>
-    <a href="https://github.com/YahyaDoudouh" class="cta-button">Check out my GitHub</a>
+    <div class="intro">
+      <h1>Hey there! I'm Yahya 👋</h1>
+      <h2>Aspiring Cloud & Network Engineer | Tech Enthusiast | Lifelong Learner</h2>
+      <p>
+        Welcome to my IT journey! After a few transformative life experiences, I decided to pursue my passion for technology and dive deep into <span class="highlight">Cloud Engineering</span>, <span class="highlight">Networking</span>, and <span class="highlight">Cybersecurity</span>.
+      </p>
+      <p>
+        I'm currently working hard to expand my knowledge in cloud platforms like <span class="highlight">Azure</span>, <span class="highlight">AWS</span>, and <span class="highlight">Google Cloud</span>, with a focus on network infrastructure and security best practices. My journey is all about growth, challenge, and creating a lasting impact in the tech world.
+      </p>
+      <a href="https://github.com/YahyaDoudouh" class="cta-button">Check out my GitHub</a>
+    </div>
+
+    <div class="about">
+      <div class="section-title">What's Next?</div>
+      <p>
+        Over the coming months, I'll be working towards completing my certifications, starting with <span class="highlight">CompTIA A+</span>, then moving on to more specialized cloud certifications. I'm also building hands-on experience with real-world projects and collaborating with others to learn and grow.
+      </p>
+
+      <div class="section-title">Let's Connect!</div>
+      <p>
+        Feel free to reach out if you’re interested in connecting or have advice for someone just starting out in cloud & network engineering. You can find me on:
+      </p>
+      <a href="https://www.linkedin.com/in/yahya-doudouh" class="cta-button">LinkedIn</a>
+    </div>
+
     <div class="footer">
-      <p>Feel free to reach out if you're interested in connecting! <br> Find me on <a href="https://www.linkedin.com/in/yahya-doudouh">LinkedIn</a></p>
+      <p>Thanks for visiting! Stay tuned for more updates. 🚀</p>
     </div>
   </div>
 </body>
